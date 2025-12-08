@@ -32,7 +32,7 @@
 
 @theme inline {
   /* Breakpoints */
-  --breakpoint-xs: 360px;
+  --breakpoint-xs: 499px;
   --breakpoint-desktop: 1025px;
 
   /* Colors */

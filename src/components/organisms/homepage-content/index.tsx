@@ -22,7 +22,7 @@ const HomepageContent: FC<IHomepage> = ({ rawCarouselData, rawSliderData }) => {
 
   return (
     <div className="w-full h-full flex justify-center bg-gradient relative">
-      <div className="absolute w-full h-full bg-[url('/images/background.webp')] inset-0 bg-center desktop:bg-right object-cover mix-blend-color-burn opacity-80"></div>
+      <div className="absolute w-full h-full bg-[url('/images/background.webp')] inset-0 bg-center object-cover opacity-80 mix-blend-color-burn"></div>
       <Container className="relative z-[10] flex flex-col">
         <Navbar />
         <div className="w-full h-full flex flex-col desktop:flex-row gap-[14px] pt-[36px] pb-[60px] desktop:pt-[100px]">
@@ -68,7 +68,7 @@ const HomepageContent: FC<IHomepage> = ({ rawCarouselData, rawSliderData }) => {
               />
             </div>
           </section>
-          <section className="w-full min-h-[378px] desktop:h-full relative animate-fadein flex items-start">
+          <section className="w-full min-h-[378px] desktop:h-full relative animate-fadein">
             <Activity mode={CarouselData ? "visible" : "hidden"}>
               <div className="w-full flex justify-center">
                 <Tooltip

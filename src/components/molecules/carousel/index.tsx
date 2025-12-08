@@ -12,10 +12,10 @@ const CarouselContainer = ({ children }: { children: ReactNode }) => {
   const count = Children.count(children);
 
   return (
-    <div className="carousel w-[234px] h-[378px] desktop:w-[292px] desktop:h-[408px] flex justify-center">
+    <div className="carousel w-full xs:w-[70%] lg:w-full h-full flex justify-center">
       {active > 0 && (
         <Button
-          className="absolute top-[38%] desktop:top-[48%] -left-16 desktop:-left-42 z-[10] scale-75 desktop:scale-100"
+          className="absolute top-[36%] desktop:top-[40%] xxs:-left-0 -left-5 scale-75 desktop:scale-100"
           transparent
           onClick={() => setActive((i) => i - 1)}
           label={
@@ -30,7 +30,7 @@ const CarouselContainer = ({ children }: { children: ReactNode }) => {
       )}
       {Children.map(children, (child, i) => (
         <div
-          className="card-container w-full h-[311px] desktop:h-[408px]"
+          className="card-container w-[234px] h-[311px] desktop:w-[292px] desktop:h-[408px]"
           style={
             {
               "--active": 1,
@@ -48,7 +48,7 @@ const CarouselContainer = ({ children }: { children: ReactNode }) => {
       ))}
       {active < count - 1 && (
         <Button
-          className="absolute top-[38%] desktop:top-[48%] -right-16 desktop:-right-42 scale-75 desktop:scale-100"
+          className="absolute top-[36%] desktop:top-[40%] -right-5 scale-75 desktop:scale-100"
           transparent
           onClick={() => setActive((i) => i + 1)}
           label={
