@@ -12,7 +12,7 @@ const CarouselCard: FC<ICarouselCard> = ({
   skills,
 }) => {
   return (
-    <div className="card bg-white drop-shadow-xl py-[36px] px-[16px] desktop:px-[30px] gap-[16px] desktop:gap-[36px]">
+    <div className="card bg-white drop-shadow-xl py-[36px] px-[6px] desktop:px-[26px] gap-[16px] desktop:gap-[36px]">
       <section className="text-center flex flex-col gap-[16px]">
         <div className="flex items-center justify-center">
           <div className="relative w-auto">

@@ -15,7 +15,7 @@ const CarouselContainer = ({ children }: { children: ReactNode }) => {
     <div className="carousel w-full xs:w-[70%] lg:w-full h-full flex justify-center">
       {active > 0 && (
         <Button
-          className="absolute top-[36%] desktop:top-[40%] xxs:-left-0 -left-5 scale-75 desktop:scale-100"
+          className="absolute top-[36%] -left-5 scale-75 desktop:scale-100"
           transparent
           onClick={() => setActive((i) => i - 1)}
           label={
@@ -48,7 +48,7 @@ const CarouselContainer = ({ children }: { children: ReactNode }) => {
       ))}
       {active < count - 1 && (
         <Button
-          className="absolute top-[36%] desktop:top-[40%] -right-5 scale-75 desktop:scale-100"
+          className="absolute top-[36%] -right-5 scale-75 desktop:scale-100"
           transparent
           onClick={() => setActive((i) => i + 1)}
           label={

@@ -86,7 +86,7 @@ const HomepageContent: FC<IHomepage> = ({ rawCarouselData, rawSliderData }) => {
 
           {/* mobile-only section */}
           <section className="flex flex-col gap-[16px] mt-[16px] desktop:hidden">
-            <div className="grid grid-cols-2 w-[244px] sm:w-full sm:flex sm:flex-row gap-y-[8px] sm:gap-[12px]">
+            <div className="grid grid-cols-2 w-[260px] sm:w-full sm:flex sm:flex-row gap-y-[8px] sm:gap-[12px]">
               <Checkbox label="한국어 능력" checked />
               <Checkbox label="업무 수행 능력" checked />
               <Checkbox label="겸업 여부" checked />
