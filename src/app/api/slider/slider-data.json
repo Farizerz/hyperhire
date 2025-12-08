@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "GraphIcon",
+    "label": "해외 마케팅"
+  },
+  {
+    "icon": "ImageIcon",
+    "label": "퍼블리셔"
+  },
+  {
+    "icon": "BoxIcon",
+    "label": "캐드원(제도사)"
+  },
+  {
+    "icon": "TargetIcon",
+    "label": "해외 세일즈"
+  },
+  {
+    "icon": "CallIcon",
+    "label": "해외 CS"
+  }
+]

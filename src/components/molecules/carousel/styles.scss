@@ -1,0 +1,59 @@
+$color-purple: #8b5cf6;
+$color-pink: #ec4899;
+$color-gray: #9ca3af;
+$color-black: #1f2937;
+$card-size: 23rem;
+
+.carousel {
+  position: relative;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+
+.card-container {
+  position: absolute;
+  transform: scaleY(1) translateZ(calc(var(--abs-offset) * -10rem))
+    translateX(calc(var(--direction) * -50%));
+  transition: all 0.3s ease-out;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, calc(1 - var(--abs-offset) * 0.2));
+  transition: all 0.3s ease-out;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+  background: unset;
+  border: unset;
+
+  &.left {
+    transform: translateX(-100%) translatey(-50%);
+  }
+
+  &.right {
+    right: 0;
+    transform: translateX(100%) translatey(-50%);
+  }
+}
+
+@media (max-width: 1170px) {
+  .card-container {
+    transform: scaleY(1) translateZ(calc(var(--abs-offset) * -8rem))
+      translateX(calc(var(--direction) * -20%));
+  }
+}
