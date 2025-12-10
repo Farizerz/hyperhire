@@ -55,7 +55,7 @@ const HomepageContent: FC<IHomepage> = ({ rawCarouselData, rawSliderData }) => {
 
             <div className="flex flex-row gap-[48px] hidden desktop:inline-flex animate-fadein">
               <Services
-                title="평균 월 120만원<"
+                title="평균 월 120만원"
                 description="임금을 해당 국가를 기준으로 계산합니다."
               />
               <Services
